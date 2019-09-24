@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +14,9 @@ import { InternetComponent } from './components/internet/internet.component';
 import { InformacionComponent } from './components/informacion/informacion.component';
 import { AppsWebComponent } from './components/apps-web/apps-web.component';
 import { MaterialModule } from './material.module';
+
+// importar rutas
+import { ROUTES } from './app.routes';
 
 
 
@@ -32,7 +37,8 @@ import { MaterialModule } from './material.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule.forRoot( ROUTES, { useHash: true } )
   ],
   providers: [],
   bootstrap: [AppComponent]
