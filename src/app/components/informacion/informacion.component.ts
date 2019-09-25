@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InformacionService, Iinformacion } from '../../services/informacion.service';
 
 @Component({
   selector: 'app-informacion',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InformacionComponent implements OnInit {
 
-  constructor() { }
+  informacion: Iinformacion[];
+
+  // tslint:disable-next-line:no-shadowed-variable
+  constructor(private InformacionService: InformacionService) { }
 
   ngOnInit() {
+    this.informacion = this.InformacionService.getInformacion();
   }
 
 }

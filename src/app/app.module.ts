@@ -18,6 +18,12 @@ import { MaterialModule } from './material.module';
 // importar rutas
 import { ROUTES } from './app.routes';
 
+// ------------------------Servicios
+import { CamarasService } from './services/camaras.service';
+import { InformacionService } from './services/informacion.service';
+import { InternetService } from './services/internet.service';
+
+
 
 
 
@@ -40,7 +46,11 @@ import { ROUTES } from './app.routes';
     MaterialModule,
     RouterModule.forRoot( ROUTES, { useHash: true } )
   ],
-  providers: [],
+  providers: [
+    InformacionService,
+    InternetService,
+    CamarasService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

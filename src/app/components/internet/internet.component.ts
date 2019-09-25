@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InternetService, Iinternet } from '../../services/internet.service';
 
 @Component({
   selector: 'app-internet',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InternetComponent implements OnInit {
 
-  constructor() { }
+  internets: Iinternet[] = [];
+
+
+  // tslint:disable-next-line:no-shadowed-variable
+  constructor( private InternetService: InternetService ) { }
 
   ngOnInit() {
+    this.internets = this.InternetService.getInternet();
   }
-
 }
