@@ -26,6 +26,14 @@ import { InternetService } from './services/internet.service';
 
 
 
+import { CarouselComponent } from './components/carousel/carousel.component';
+
+
+import { MatCarouselModule, MatCarousel } from '@ngmodule/material-carousel';
+
+
+
+
 
 
 @NgModule({
@@ -37,15 +45,17 @@ import { InternetService } from './services/internet.service';
     CamaraComponent,
     InternetComponent,
     InformacionComponent,
-    AppsWebComponent
+    AppsWebComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    RouterModule.forRoot( ROUTES, { useHash: true } )
-  ],
+    RouterModule.forRoot( ROUTES, { useHash: true } ),
+    MatCarouselModule.forRoot(),
+    ],
   providers: [
     InformacionService,
     InternetService,
