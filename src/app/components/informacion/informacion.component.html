@@ -1,8 +1,7 @@
-<mat-grid-list *ngFor="let informacion of informacion" cols="2" rowHeight="2:1">
-    <mat-grid-tile>
-        <h1>{{  informacion.Titulo }}</h1>             
-    </mat-grid-tile>
-    <p>
-        {{  informacion.Descripcion  }}
-    </p>   
-</mat-grid-list>
+<div *ngFor="let informacion of informacion">
+    <h1>{{  informacion.Titulo }}</h1>             
+        <p>
+            {{  informacion.Descripcion  }}
+        </p>
+</div>
+
