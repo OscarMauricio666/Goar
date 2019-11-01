@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// componentes
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CamarasComponent } from './components/camaras/camaras.component';
@@ -13,6 +15,9 @@ import { CamaraComponent } from './components/camara/camara.component';
 import { InternetComponent } from './components/internet/internet.component';
 import { InformacionComponent } from './components/informacion/informacion.component';
 import { AppsWebComponent } from './components/apps-web/apps-web.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+
+// modulo de Angular Material
 import { MaterialModule } from './material.module';
 
 // importar rutas
@@ -25,11 +30,8 @@ import { InternetService } from './services/internet.service';
 
 
 
-
-import { CarouselComponent } from './components/carousel/carousel.component';
-
-
-import { MatCarouselModule, MatCarousel } from '@ngmodule/material-carousel';
+import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 
 
@@ -54,7 +56,7 @@ import { MatCarouselModule, MatCarousel } from '@ngmodule/material-carousel';
     BrowserAnimationsModule,
     MaterialModule,
     RouterModule.forRoot( ROUTES, { useHash: true } ),
-    MatCarouselModule.forRoot(),
+    MatCarouselModule.forRoot()
     ],
   providers: [
     InformacionService,

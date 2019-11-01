@@ -1,1 +1,5 @@
-<p>carousel works!</p>
+<mat-carousel timings="250ms ease-in" slides="3" [loop]="true">
+  <mat-carousel-slide *ngFor="let slide of slides">
+    {{  slide.img  }}
+  </mat-carousel-slide>
+</mat-carousel>
