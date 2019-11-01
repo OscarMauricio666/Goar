@@ -20,7 +20,7 @@ export class CarouselService {
 
     },
     {
-      img: 'assets/images/carousel/apps_web.png',
+      img: 'assets/images/carousel/app-web.png',
       Descripcion: 'Obtener la satisfacion y agradecimieto de todos nuestros clientes, aportar a la sociedad Colombiana en su desarrollo.'
 
     }

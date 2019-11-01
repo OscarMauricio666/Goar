@@ -10,11 +10,12 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 export const ROUTES: Routes = [
     { path: '', component: CarouselComponent },
     { path: 'apps-web', component: AppsWebComponent },
+    { path: 'carousel', component: CarouselComponent },
     { path: 'camara', component: CamaraComponent },
     { path: 'camaras', component: CamarasComponent },
     { path: 'informacion', component: InformacionComponent },
     { path: 'internet', component: InternetComponent },
     { path: '', pathMatch: 'full', redirectTo: 'carousel' },
-    { path: '**', pathMatch: 'full', redirectTo: 'home' }
+    { path: '**', pathMatch: 'full', redirectTo: 'carousel' }
 
 ];
