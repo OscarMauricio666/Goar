@@ -1,4 +1,7 @@
-.img{
-    width: 1920;
-    height: 480px;
+div{
+    padding: 6px;    
+}
+mat-carousel-slide{
+    border-radius: 6px;
+    -moz-border-radius: 6px;
 }

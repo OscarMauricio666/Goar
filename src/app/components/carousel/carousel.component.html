@@ -1,6 +1,8 @@
- <mat-carousel timings="250ms ease-in" [autoplay]="true" interval="5000" slides="3" [loop]="true" proportion="24" [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="false"
-orientation="ltr" maxWidth="auto"> 
-  <mat-carousel-slide  #matCarouselSlide *ngFor="let slide of slides; let i = index"  [image]="slide.img" overlayColor="#00000040" [hideOverlay]="true" >
-  </mat-carousel-slide>  
-</mat-carousel>
+ <div>
+  <mat-carousel timings="250ms ease-in" [autoplay]="true" interval="5000" slides="3" [loop]="true" proportion="24" [hideArrows]="true" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="false"
+  orientation="ltr" maxWidth="auto"> 
+    <mat-carousel-slide  #matCarouselSlide *ngFor="let slide of slides; let i = index"  [image]="slide.img" overlayColor="#00000040" [hideOverlay]="true" >
+    </mat-carousel-slide>  
+  </mat-carousel>
+ </div>
     
