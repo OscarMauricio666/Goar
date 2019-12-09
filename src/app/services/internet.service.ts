@@ -12,19 +12,19 @@ export class InternetService {
       {
         Nombre: 'Plan uno',
         img: 'assets/images/internet/internet.jpg',
-        Descripcion: ' este plan consta de 4 megas de descarga.',
+        Descripcion: 'Este plan tiene 4 megas de descarga.',
         Costo: '$50.000'
       },
       {
         Nombre: 'Plan dos',
         img: 'assets/images/internet/internet.jpg',
-        Descripcion: ' este plan consta de 5 megas de descarga.',
+        Descripcion: 'Este plan tiene 5 megas de descarga.',
         Costo: '$60.000'
       },
       {
         Nombre: 'Plan tres',
         img: 'assets/images/internet/internet.jpg',
-        Descripcion: ' este plan consta de 6 megas de descarga.',
+        Descripcion: 'Este plan tiene 6 megas de descarga.',
         Costo: '$80.000'
       }
     ];

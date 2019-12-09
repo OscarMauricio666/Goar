@@ -8,3 +8,7 @@
 div{
     padding: 6px;
 }
+#line{
+    display: inline-block;
+    margin: 3px;
+}

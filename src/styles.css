@@ -9,3 +9,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .azul{
  color: #031e2b;
 }
+.diplay-block {
+    position: fixed;
+    bottom: 0px;
+    display: block;
+}

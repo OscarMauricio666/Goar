@@ -17,5 +17,4 @@ export const ROUTES: Routes = [
     { path: 'internet', component: InternetComponent },
     { path: '', pathMatch: 'full', redirectTo: 'carousel' },
     { path: '**', pathMatch: 'full', redirectTo: 'carousel' }
-
 ];
